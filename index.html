@@ -47,6 +47,7 @@
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
+	<script src="js/type-core.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -110,7 +111,7 @@
          <div class="overlayblk"></div>
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Prathamesh Tambe.</h1>
-            <h3>I'm a Boston based <span>Experienced Fullstack Web developer</span> and <span>Graduated (April 2020) from Northeastern University</span> creating awesome and
+            <h3>I'm a Boston based <span>Experienced <span id="roles">Fullstack Web developer</span></span> and <span>Graduated (May 2020) from Northeastern University</span> creating awesome and
             effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
@@ -149,8 +150,8 @@
                My simple motive is to create solutions that will make a difference in someone's life.
             </p>
             <p>   
-               I have more than 6 years of experience in Fullstack Web development, with this I have around 3 years of experience in Hybrid Mobile application development.<br/>
-               I have worked on more than 5 mobile applications and successfully hosted them on the iOS app store and the Android play store.            
+               I have around 6 years of experience in multiple cutting-edge web technologies from Front end to Back end, And expertise in JavaScript, Angular, NodeJS, PHP, Drupal 7, and Ionic framework.<br/> 
+			   During this professional period, I have contributed in gathering requirements from clients, establishing the scope of the project, determining the best tech stack for it, designing the overall architecture, and developing modules for it. I have also engaged in testing and operations. I am a very enthusiastic team worker as I like to go out of my way to help and guide others. At MathWorks, I have built software using D3.js visualizations, Perl scripting, Angular, PHP, and MS SQL.            
             </p> 
 
             <div class="row">
@@ -251,7 +252,22 @@
 
                <div class="twelve columns">
 
-                  <h3>MathWorks, Natick US</h3>
+                  <h3><a href="https://www.airtank.com/" target="_blank">AirTank</a>, New Hampshire,USA</h3>
+                  <p class="info">Frontend Developer <span>&bull;</span> <em class="date">June 2020 - October 2020</em></p>
+
+                  <p>● Built custom pages in Ziftrshop Framework using JavaScript, React.js, HTML, SCSS and, Bootstrap<br/>
+                     ● Integrated backend API’s with frontend functionalities
+					 ● Performed code reviews on other developers code and made sure coding standards followed </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3><a href="https://www.mathworks.com/" target="_blank">MathWorks</a>, Natick,USA</h3>
                   <p class="info">Web devleopement Intern <span>&bull;</span> <em class="date">May 2019 - Dec 2019</em></p>
 
                   <p>● Designed database architecture and build issue tracker for Log processing tool using Angular, Typescript, ES6, PHP, Bootstrap, HTML and Microsoft SQL.<br/>
@@ -266,7 +282,7 @@
 
                <div class="twelve columns">
 
-                  <h3>Cinestaan Digital Pvt. Ltd., Mumbai India</h3>
+                  <h3><a href="https://www.cinestaan.com/" target="_blank">Cinestaan Digital Pvt. Ltd.</a>, Mumbai India</h3>
                   <p class="info">Software Developer <span>&bull;</span> <em class="date">January 2018 - August 2018</em></p>
 
                   <p>
@@ -285,7 +301,7 @@
 
                <div class="twelve columns">
 
-                  <h3>Experience Commerce India pvt ltd., Mumbai India</h3>
+                  <h3><a href="https://www.experiencecommerce.com/" target="_blank">Experience Commerce India pvt ltd.</a>, Mumbai India</h3>
                   <p class="info">Senior Digital Technologist <span>&bull;</span> <em class="date">June 2014 - September 2017</em></p>
 
                   <p>I started as a web technologist in this organization and within 1 year got promoted to the senior web technologist and handled a team of two juniors. I was the part of 2 Abby award (Digital agency awards) winning projects.</br></br>
@@ -309,7 +325,7 @@
 
                <div class="twelve columns">
 
-                  <h3>The Code Design Studio, Mumbai India</h3>
+                  <h3><a href="http://thecode.in/" target="_blank">The Code Design Studio</a>, Mumbai India</h3>
                   <p class="info">Web Developer <span>&bull;</span> <em class="date">June 2013 - June 2014</em></p>
 
                   <p>● Created a custom content management system to maintain all updates of client websites.<br/>
@@ -324,7 +340,7 @@
 
                <div class="twelve columns">
 
-                  <h3>Office Efficiencies (India) Pvt. Ltd., Mumbai India</h3>
+                  <h3><a href="https://www.safesquid.com/" target="_blank">Office Efficiencies (India) Pvt. Ltd.</a>, Mumbai India</h3>
                   <p class="info">Web developer <span>&bull;</span> <em class="date">October 2012 - June 2013</em></p>
 
                   <p>● Designed and developed the current website of Safesquid using Drupal 7, PHP, MySQL, jQuery, HTML, and CSS3.<br/>
@@ -432,7 +448,7 @@
 					   <h4>Address and Phone</h4>
 					   <p class="address">
 						   Prathamesh Tambe<br>
-						   Boston, MA 02115 US<br>
+						   Boston, MA 02215 US<br>
 						   <span>(857) 317-0754</span>
 					   </p>
 
@@ -517,6 +533,25 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-151991773-1');
+  
+  
+	/* change type writer code  */
+	var app = document.getElementById('roles');
+
+	var typewriter = new Typewriter(app, {
+		loop: false
+	});
+
+	typewriter.typeString('Frontend Developer')
+		.pauseFor(2500)
+		.deleteAll()
+		.typeString('Backend Developer')
+		.pauseFor(2500)
+		.deleteAll()
+		//.deleteChars(7)
+		.typeString('Fullstack Developer (Web + Hybrid Mobile applications)')
+		.pauseFor(2500)
+		.start();
 </script>
 
 
